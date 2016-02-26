@@ -6,8 +6,8 @@ class Hamming
 
     distance = 0
 
-    strand1.chars.each_with_index do |i|
-      distance += 1 if strand1.slice(i) != strand2.slice(i)
+    strand1.chars.each_with_index do |item, index|
+      distance += 1 if strand1.slice(index) != strand2.slice(index)
     end
 
     distance
